@@ -1,0 +1,213 @@
+#two, #three, #span1, #span2, #span3 {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0 10px;
+  font-size: 15px; }
+
+.header, .ucenik-filter, .inner-blue-section-wrapper {
+  margin: 0 20px; }
+
+#ocjena, #predmet, #ocjena2, .ocjena-opis, #circle, .izostanak, .sat, .izostanak-opravdani, .neopravdani {
+  margin: 0 10px; }
+
+body {
+  background-image: linear-gradient(to bottom right, #f32942, #f89c12);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0 0; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+#naslov {
+  color: white; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#ucenik {
+  color: white;
+  margin-left: 10px; }
+
+.ucenik-filter {
+  margin-top: 10px; }
+
+.filter-inner-one {
+  display: flex;
+  justify-content: flex-start; }
+
+.filter-inner-two {
+  display: flex;
+  justify-content: flex-start; }
+
+#ucenik {
+  margin-bottom: 0;
+  font-size: 0.7em; }
+
+#span1 {
+  height: 25px;
+  margin-bottom: 5px; }
+
+#span2 {
+  height: 25px;
+  margin-bottom: 5px; }
+
+#span3 {
+  height: 25px;
+  margin-bottom: 5px;
+  margin-left: 5px; }
+
+#span-profile {
+  display: flex;
+  align-items: center; }
+
+#slika {
+  margin-left: 10px; }
+
+.blue-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: #261d8a;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.inner-blue-section-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.blue-section-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  background-color: #372CB6;
+  border-radius: 10px;
+  border-left: 3px solid #00AEFF;
+  padding: 2px 0; }
+
+.yellow-section-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  background-color: #372CB6;
+  border-radius: 10px;
+  border-left: 3px solid #FFC600;
+  padding: 2px 0; }
+
+.green-section-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  background-color: #372CB6;
+  border-radius: 10px;
+  border-left: 3px solid #00FF78;
+  padding: 2px 0; }
+
+.red-section-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  background-color: #372CB6;
+  border-radius: 10px;
+  border-left: 3px solid #F0253D;
+  padding: 2px 0; }
+
+.predmet-ocjena-slika {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#notification-date {
+  margin-left: 20px;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.637); }
+
+#ocjena {
+  font-size: 0.7em;
+  color: #00AEFF;
+  margin-bottom: -13px;
+  margin-top: 10px;
+  font-weight: bolder; }
+
+#predmet {
+  font-size: 0.9em; }
+
+#ocjena2 {
+  font-size: 0.7em;
+  margin-top: -5px;
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.637);
+  font-weight: bold; }
+
+.ocjena-opis {
+  font-size: 0.7em;
+  margin-top: -5px;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.637); }
+
+#circle {
+  position: relative; }
+
+.number-in-picture {
+  position: absolute;
+  top: -22px;
+  left: 12px;
+  font-size: 1.5em;
+  color: #261d8a; }
+
+.dot-in-circle {
+  position: absolute;
+  top: 0px;
+  left: 27px; }
+
+.fullcircle-2 {
+  position: relative;
+  visibility: hidden; }
+
+.izostanak {
+  font-size: 0.7em;
+  color: #FFC600;
+  margin-bottom: -13px;
+  margin-top: 10px;
+  font-weight: bolder; }
+
+.sat {
+  font-size: 0.7em;
+  margin-top: -5px;
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.637);
+  font-weight: bold; }
+
+.izostanak-opravdani {
+  font-size: 0.7em;
+  color: #00FF78;
+  margin-bottom: -13px;
+  margin-top: 10px;
+  font-weight: bolder; }
+
+.neopravdani {
+  font-size: 0.7em;
+  color: #F0253D;
+  margin-bottom: -13px;
+  margin-top: 10px;
+  font-weight: bolder; }
+
+.fullcircle {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */
