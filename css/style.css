@@ -7,54 +7,55 @@
   padding: 0 10px;
   font-size: 15px; }
 
-.header, .ucenik-filter, .inner-blue-section-wrapper {
+.header, .student-filter, .inner-blue-section-wrapper {
   margin: 0 20px; }
 
-#ocjena, #predmet, #ocjena2, .ocjena-opis, #circle, .izostanak, .sat, .izostanak-opravdani, .neopravdani {
+.unreg-mia, .reg-mia, .full-unreg-mia, #ocjena, .class, .grade2, .grade-desc, #circle, .sat {
   margin: 0 10px; }
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  border-radius: 10px;
+  padding: 2px 0; }
+
+.unreg-mia, .reg-mia, .full-unreg-mia {
+  font-size: 0.7em;
+  margin-bottom: -13px;
+  margin-top: 10px;
+  font-weight: bolder; }
 
 body {
   background-image: linear-gradient(to bottom right, #f32942, #f89c12);
   font-family: 'Poppins', sans-serif;
   color: white;
-  margin: 0 0; }
+  margin: 0 0;
+  height: 100%; }
 
 a {
   color: white;
   text-decoration: none; }
-
-#naslov {
-  color: white; }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-#ucenik {
-  color: white;
-  margin-left: 10px; }
-
-.ucenik-filter {
-  margin-top: 10px; }
-
-.filter-inner-one {
-  display: flex;
-  justify-content: flex-start; }
-
-.filter-inner-two {
-  display: flex;
-  justify-content: flex-start; }
-
-#ucenik {
+.student {
+  margin-left: 10px;
   margin-bottom: 0;
   font-size: 0.7em; }
 
-#span1 {
-  height: 25px;
-  margin-bottom: 5px; }
+.student-filter {
+  margin-top: 10px; }
 
-#span2 {
+.filter-inner-one, .filter-inner-two {
+  display: flex;
+  justify-content: flex-start; }
+
+#span1, #span2 {
   height: 25px;
   margin-bottom: 5px; }
 
@@ -67,7 +68,7 @@ a {
   display: flex;
   align-items: center; }
 
-#slika {
+#img-down-arrow {
   margin-left: 10px; }
 
 .blue-section {
@@ -83,46 +84,22 @@ a {
   flex-direction: column; }
 
 .blue-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
-  border-left: 3px solid #00AEFF;
-  padding: 2px 0; }
+  border-left: 3px solid #00AEFF; }
 
 .yellow-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
-  border-left: 3px solid #FFC600;
-  padding: 2px 0; }
+  border-left: 3px solid #FFC600; }
 
 .green-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
-  border-left: 3px solid #00FF78;
-  padding: 2px 0; }
+  border-left: 3px solid #00FF78; }
 
 .red-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
-  border-left: 3px solid #F0253D;
-  padding: 2px 0; }
+  border-left: 3px solid #F0253D; }
 
-.predmet-ocjena-slika {
+.grade-class-img {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -139,17 +116,17 @@ a {
   margin-top: 10px;
   font-weight: bolder; }
 
-#predmet {
+.class {
   font-size: 0.9em; }
 
-#ocjena2 {
+.grade2 {
   font-size: 0.7em;
   margin-top: -5px;
   margin-bottom: 2px;
   color: rgba(255, 255, 255, 0.637);
   font-weight: bold; }
 
-.ocjena-opis {
+.grade-desc {
   font-size: 0.7em;
   margin-top: -5px;
   margin-bottom: 15px;
@@ -174,12 +151,8 @@ a {
   position: relative;
   visibility: hidden; }
 
-.izostanak {
-  font-size: 0.7em;
-  color: #FFC600;
-  margin-bottom: -13px;
-  margin-top: 10px;
-  font-weight: bolder; }
+.unreg-mia {
+  color: #FFC600; }
 
 .sat {
   font-size: 0.7em;
@@ -188,19 +161,11 @@ a {
   color: rgba(255, 255, 255, 0.637);
   font-weight: bold; }
 
-.izostanak-opravdani {
-  font-size: 0.7em;
-  color: #00FF78;
-  margin-bottom: -13px;
-  margin-top: 10px;
-  font-weight: bolder; }
+.reg-mia {
+  color: #00FF78; }
 
-.neopravdani {
-  font-size: 0.7em;
-  color: #F0253D;
-  margin-bottom: -13px;
-  margin-top: 10px;
-  font-weight: bolder; }
+.full-unreg-mia {
+  color: #F0253D; }
 
 .fullcircle {
   position: relative;

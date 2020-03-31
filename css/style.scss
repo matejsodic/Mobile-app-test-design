@@ -16,20 +16,36 @@
   margin: 0 10px;
 }
 
+%section-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  border-radius: 10px;
+  padding: 2px 0;
+}
+
+%mia{
+  @extend %card-info-margin;
+  font-size: 0.7em;
+  margin-bottom: -13px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+//=================================================================
+
 body {
   background-image: linear-gradient(to bottom right, rgb(243,41,66), rgb(248, 156, 18));
   font-family: 'Poppins', sans-serif;
   color: white;
   margin: 0 0;
+  height: 100%;
 }
 
 a {
   color: white;
   text-decoration: none;
-}
-
-#naslov {
-  color: white;
 }
 
 .header {
@@ -39,42 +55,27 @@ a {
   @extend %margin-left-right;
 }
 
-#ucenik {
-  color: white;
+.student{
   margin-left: 10px;
+  margin-bottom: 0;
+  font-size: 0.7em;
 }
 
-.ucenik-filter {
+.student-filter {
   @extend %margin-left-right;
   margin-top: 10px;
 }
 
-.filter-inner-one {
+.filter-inner-one, .filter-inner-two {
   display: flex;
   justify-content: flex-start;
-}
-
-.filter-inner-two {
-  display: flex;
-  justify-content: flex-start;
-}
-
-#ucenik {
-  margin-bottom: 0;
-  font-size: 0.7em;
 }
 
 #two, #three {
   @extend %item-style;
 }
 
-#span1 {
-  @extend %item-style;
-  height: 25px;
-  margin-bottom: 5px;
-}
-
-#span2 {
+#span1, #span2 {
   @extend %item-style;
   height: 25px;
   margin-bottom: 5px;
@@ -92,7 +93,7 @@ a {
   align-items: center;
 }
 
-#slika {
+#img-down-arrow {
   margin-left: 10px;
 }
 
@@ -111,51 +112,31 @@ a {
   @extend %margin-left-right;
 }
 
+.section-card {
+  @extend %section-card;
+}
+
 .blue-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
   border-left: 3px solid #00AEFF;
-  padding: 2px 0;
 }
 
 .yellow-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
   border-left: 3px solid #FFC600;
-  padding: 2px 0;
 }
 
 .green-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
   border-left: 3px solid #00FF78;
-  padding: 2px 0; 
 }
 
 .red-section-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-  margin-left: 0px;
   background-color: #372CB6;
-  border-radius: 10px;
   border-left: 3px solid #F0253D;
-  padding: 2px 0;
 }
 
-.predmet-ocjena-slika {
+.grade-class-img {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -176,12 +157,12 @@ a {
   font-weight: bolder;
 }
 
-#predmet {
+.class {
   @extend %card-info-margin;
   font-size: 0.9em;
 }
 
-#ocjena2 {
+.grade2 {
   @extend %card-info-margin;
   font-size: 0.7em;
   margin-top: -5px;
@@ -190,7 +171,7 @@ a {
   font-weight: bold;
 }
 
-.ocjena-opis {
+.grade-desc {
   @extend %card-info-margin;
   font-size: 0.7em;
   margin-top: -5px;
@@ -222,13 +203,9 @@ a {
   visibility: hidden;
 }
 
-.izostanak{
-  @extend %card-info-margin;
-  font-size: 0.7em;
+.unreg-mia{
+  @extend %mia;
   color: #FFC600;
-  margin-bottom: -13px;
-  margin-top: 10px;
-  font-weight: bolder;
 }
 
 .sat {
@@ -240,22 +217,14 @@ a {
   font-weight: bold;
 }
 
-.izostanak-opravdani {
-  @extend %card-info-margin;
-  font-size: 0.7em;
+.reg-mia {
+  @extend %mia;
   color: #00FF78;
-  margin-bottom: -13px;
-  margin-top: 10px;
-  font-weight: bolder;
 }
 
-.neopravdani {
-  @extend %card-info-margin;
-  font-size: 0.7em;
+.full-unreg-mia {
+  @extend %mia;
   color: #F0253D;
-  margin-bottom: -13px;
-  margin-top: 10px;
-  font-weight: bolder;
 }
 
 .fullcircle {
